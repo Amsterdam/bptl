@@ -422,6 +422,11 @@ CELERY_ONCE = {
     },
 }
 
+CELERY_TASK_ROUTES = {
+    "bptl.dummy.tasks.foo": {"queue": "foo"},
+    "bptl.dummy.tasks.bar": {"queue": "bar"},
+}
+
 # project application settings
 MAX_TASKS = 10
 ZGW_CONSUMERS_CLIENT_CLASS = "bptl.work_units.zgw.client.ZGWClient"

@@ -11,4 +11,5 @@ celery worker \
     -l $LOGLEVEL \
     --workdir src \
     -O fair \
-    -c $CONCURRENCY
+    -c $CONCURRENCY \
+    -Q celery,foo,bar
